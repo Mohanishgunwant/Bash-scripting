@@ -1,15 +1,19 @@
 #!/bin/bash
 
 
-if [[ -z $1 ]]; then        #True if length of string is 0  # ERROR HANDLING-  If no argument is provided, the code will throw an error since $1 will be empty. You can handle this case by checking if the argument is present before performing the comparisons.                       
+if [[ -z $1 ]]
+then        #True if length of string is 0  # ERROR HANDLING-  If no argument is provided, the code will throw an error since $1 will be empty. You can handle this case by checking if the argument is present before performing the comparisons.                       
     echo "No argument provided. Please provide a number."
     exit 1
-elif ! [[ $1 =~ ^-?[0-9]+$ ]]; then   #Input Validation: The code assumes that the user will provide a numeric input as the first argument. However, it doesn't validate if the argument is indeed a number. You can add input validation to ensure the argument is a number before performing the comparisons.
+elif ! [[ $1 =~ ^-?[0-9]+$ ]]
+then   #Input Validation: The code assumes that the user will provide a numeric input as the first argument. However, it doesn't validate if the argument is indeed a number. You can add input validation to ensure the argument is a number before performing the comparisons.
     echo "Oops, '$1' is not a number. Please provide a valid number."
     exit 1
-elif [[ $1 -gt 0 ]]; then
+elif [[ $1 -gt 0 ]]
+then
     echo "$1 is positive."
-elif [[ $1 -lt 0 ]]; then
+elif [[ $1 -lt 0 ]] 
+then
     echo "$1 is negative."
 else
     echo "$1 is zero."
