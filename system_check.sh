@@ -14,9 +14,6 @@ function cpu_check() {
     echo "CPU usage on $server_name is:"
     uptime
     echo""
-    
-   
-   
 }
 
 function all_check(){
