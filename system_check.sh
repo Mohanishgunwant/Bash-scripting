@@ -12,10 +12,11 @@ function memory_check() {
 function cpu_check() {
     echo ""
     echo "CPU usage on $server_name is:"
-    ps -aux
+    uptime
     echo""
-    top -i
-    echo""
+    
+   
+   
 }
 
 function all_check(){
