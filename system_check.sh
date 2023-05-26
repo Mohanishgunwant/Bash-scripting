@@ -22,3 +22,5 @@ function all_check(){
     memory_check
     cpu_check
 }
+
+all_check
