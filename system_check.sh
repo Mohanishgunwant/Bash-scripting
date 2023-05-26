@@ -18,7 +18,6 @@ function cpu_check() {
 
 function tcp_check(){
     echo "TCP connections on $server_name is:"
-    echo ""
     cat /proc/net/tcp | wc -l
     echo ""
 }
