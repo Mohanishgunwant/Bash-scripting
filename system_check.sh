@@ -13,22 +13,22 @@ function cpu_check() {
     echo ""
     echo "CPU usage on $server_name is:"
     uptime
-    echo""
+    echo ""
 }
 
 function tcp_check(){
     echo "TCP connections on $server_name is:"
-    echo""
+    echo ""
     cat /proc/net/tcp | wc -l
-    echo""
+    echo ""
 }
 
 function kernel_check(){
-    echo""
-    echo"Kernel version on $server_name is:"
-    echo""
+    echo ""
+    echo "Kernel version on $server_name is:"
+    echo ""
     uname -r
-    echo""
+    echo ""
 }
 
 function all_check(){
